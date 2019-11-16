@@ -1,0 +1,448 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Color Palette
+#9b262a - RED
+#d56f69 - LIGHT CORAL
+#ce4b51 - DARK CORAL
+#304a95 - BLUE
+#353435 - DARK GRAY
+#e4e5e5 - LIGHT GRAY
+*/
+
+
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+    display: inline-block;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    color: #ddca7e;
+    background: #282c34;
+	padding: .5em .8em;
+    border-radius: .2em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* Header section */
+
+.logo,
+.site-title {
+	text-align: center;
+}
+
+.logo {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 4em;
+	margin-bottom: 0px;
+  width: 33%;
+}
+
+
+.site-title {
+	margin-top: -1em;
+	margin-bottom: 3em;
+}
+
+.header-img {
+	margin-top: -8em;
+}
+
+/* Splash section */
+
+.splash {
+	background: #FFF6E5;
+	padding-bottom: 2em;
+}
+
+.splash-content {
+	padding: 1.5em;
+}
+
+@media screen and (min-width: 600px) {
+	.splash-text {
+		columns: 2;
+		column-gap: 2em;
+	}
+
+	.splash-text p {
+		padding-top: 0;
+	}
+}
+
+
+/*
+aside {
+	background-color: #e4e5e5;
+}
+*/
+
+main {
+	width: 100%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	
+}
+
+/* Buckets section */
+
+.buckets {
+	padding: 2em 1em 1em;
+	background-color: #e4e5e5;
+	width: 100%;
+	margin: auto;
+	display: block;
+}
+
+.buckets ul {
+	margin: 0;
+	padding: 0;
+}
+
+.buckets li {
+	margin-bottom: 1em;
+	list-style-type: none;
+	border: solid #353435 6px;
+	position: relative;
+	background-color: #e4e5e5;
+}
+
+.bucket {
+	padding: 1.5em;
+}
+
+.bucket h3 {
+	background-color: #353435;
+	color: #e4e5e5;
+	text-transform: none;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin-left: -24px;
+}
+
+.bucket p {
+	color: #353435;
+	
+}
+
+/* More section */
+
+.more {
+	padding: 2em;
+}
+
+/* Twins section */
+
+.twins {
+	text-align: center;
+	
+}
+
+.twin {
+	padding: 1em;
+	color: #353435;
+	width: 100%;
+		display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	
+}
+
+.twin img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-top: -5em;
+	margin-bottom: 0px;
+	border-radius: 30%;
+	width: 40%;
+	
+	
+	
+
+}
+
+.twin h2 {
+ text-align: center;
+	width: 50%;
+	margin: auto;
+}
+
+ .twin p {
+ text-align: justify;
+	width: 50%;
+	margin: auto;
+}
+
+.twin:last-of-type {
+}
+
+/* Colophon section */
+.colophon {
+	padding: 2em;
+	background: hsl(0, 0%, 10%);
+	color: white;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+
+.colophon .triplets {
+	margin: auto;
+	width: 33%;
+}
+
+/*--------------------------------------------------------------
+Use flex to create a three-bucket layout
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 700px) {
+	@supports (display: flex) {
+
+		.buckets ul {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.buckets li {
+			width: 24%;
+		}
+
+		.bucket li {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+	
+	}
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.site {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+
+/* Check for CSS Grid support: */
+@supports (grid-area: auto) {
+
+	/* Enable grid for viewports 600px and wider: */
+}	@media screen and (min-width: 600px) {
+
+		/* Disable fallback max-width center aligned rule: */
+		.site {
+			max-width: none;
+		}
+
+		/* Four-column layout: Two center columns have total width of 50em: */
+		.main-area > *,
+		.colophon {
+			display: grid;
+			grid-template-columns: 1 repeat(2, minmax(auto, 25em)) 1;
+		}
+
+		/* Center items by placing them in the two center columns: */
+		.splash-content,
+		.more-content,
+		.buckets ul {
+			grid-column: 2/4;
+		}
+
+		/* Use automatic grid placement + span to let each item span two columns: */
+		
+		.twin,
+		.colophon {
+			grid-column: 2 span;
+		}
+
+	}
+	
+@media screen and (max-width: 799px) {
+.header-img {
+	margin-top: -5em;
+	}
+.logo {
+	margin-top: 1em;
+}
+
+@media screen and (min-width: 800px) {
+.header-img {
+	margin-top: -2em;
+	}
+	
+	
+}
+}
